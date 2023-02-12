@@ -1,5 +1,3 @@
-console.log("Hello");
-
 const user = {
     firstName: "Jason",
     country: "United States",
@@ -11,6 +9,14 @@ const user = {
     }
 }
 
-let { firstName, country, todos, todos:{a, b, c, d}} = user;
+// let { 
+//     firstname, 
+//     location,
+//     todos, 
+//     todos:{a, b, c, d}
+// } = user;
 
-console.log(a);
+let { firstName: name, country: location1, todos,  todos: { a, b, c, d }} = user;
+console.log(location1, a);
+
+
