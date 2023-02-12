@@ -18,5 +18,3 @@ const user = {
 
 let { firstName: name, country: location1, todos,  todos: { a, b, c, d }} = user;
 console.log(location1, a);
-
-
