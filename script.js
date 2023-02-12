@@ -27,9 +27,18 @@
 // REMEMBER TO PUT REASSIGNMENTS WITH THE ORIGINAL FOLLOWED BY THE COLON AND NEW NAME
 // Create Array with list of values and use destructuring to destructure the values
 // Add a nested array with any 5 values, to the destructuring while skipping second value, and forth
-const learningList = ["recursion", "nickelodeon", "closures", "hulu", "Elohim"];
+const learningList = 
+    ["recursion", 
+    "nickelodeon", 
+    "closures", 
+    "hulu",
+    "Elohim",
+    ["Easy", "Medium", "Hard"]
+    
+    
+    ];
 
-let [ a,,b,,c] = learningList;
+let [ a,,b,,c, [d, e, f]] = learningList;
 
-console.log(a, b, c);
+console.log(d, e, f);
 
