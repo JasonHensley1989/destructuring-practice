@@ -44,8 +44,35 @@
 
 //  Final Project Test Object with a nested array
 
-const myBelongings = {
-    pet : "Doika",
-    professional: "computer",
-    hobbies: ["music", "art", "survival"]
-}
+// const myBelongings = {
+//     pet : "Doika",
+//     professional: "computer",
+//     hobbies: ["music", "art", "survival"]
+// }
+
+// let { pet, professional, hobbies: funTime, hobbies: [a, b, c] } = myBelongings;
+
+
+// console.log(a, b, c);
+
+// This is a successful example of using both of these togetjer
+
+const myHobbies = [
+    "music", "art", {
+        survival: "hunting",
+        building: "shelters",
+        fishing: "trout",
+        trapping: ["snakes", "mice", "beavers"]
+    }
+]
+
+let  [ a, b, c ]  = myHobbies;
+
+let { survival: survive, building, fishing, trapping } = c
+
+let [ a1,, a2 ] = trapping;
+
+console.log(a1, a2);
+
+// final example multi layered deep for nesting action
+// 100% 
