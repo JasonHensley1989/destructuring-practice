@@ -89,3 +89,16 @@ const counter = (n) => {
     }
 }
 
+// continuing destructuring practice
+
+const player = {
+    name: "jason",
+    age: 33,
+    weight: 160,
+    birthYear: 1989,
+    hobbies: ["programming", "music", "gaming"]
+}
+
+const { name, age, weight, birthYear: year, hobbies, hobbies: [a, b, c]} = player;
+
+console.log(a, b, c);
