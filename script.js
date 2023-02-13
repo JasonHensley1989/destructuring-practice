@@ -57,22 +57,35 @@
 
 // This is a successful example of using both of these togetjer
 
-const myHobbies = [
-    "music", "art", {
-        survival: "hunting",
-        building: "shelters",
-        fishing: "trout",
-        trapping: ["snakes", "mice", "beavers"]
-    }
-]
+// const myHobbies = [
+//     "music", "art", {
+//         survival: "hunting",
+//         building: "shelters",
+//         fishing: "trout",
+//         trapping: ["snakes", "mice", "beavers"]
+//     }
+// ]
 
-let  [ a, b, c ]  = myHobbies;
+// let  [ a, b, c ]  = myHobbies;
 
-let { survival: survive, building, fishing, trapping } = c
+// let { survival: survive, building, fishing, trapping } = c
 
-let [ a1,, a2 ] = trapping;
+// let [ a1,, a2 ] = trapping;
 
-console.log(a1, a2);
+// console.log(a1, a2);
 
 // final example multi layered deep for nesting action
 // 100% 
+
+// Recursion test
+
+const counter = (n) => {
+    if(n <= 0) {
+        return [];
+    } else {
+        const countArr = counter(n - 1);
+        countArr.unshift(n)
+        return countArr
+    }
+}
+
