@@ -101,7 +101,7 @@ const player = {
 
 const { name, age, weight, birthYear: year, hobbies, hobbies: [a, b, c]} = player;
 
-console.log(a, b, c);
+// console.log(a, b, c);
 
 // getters and setters inside of constructor functions
 
@@ -112,15 +112,31 @@ const person = {
     get fullName() {
         return ` ${person.firstName} ${person.lastName} ${person.age} `
     },
+    get fullProfile() {
+        return `Hello ${this.firstName} ${this.lastName}, its good to see your age is ${person.age}`
+    },
     set fullName(value) {
         const parts = value.split(" ");
         this.firstName = parts[0];
         this.lastName = parts[1];
-        
+
+    },
+    set changeAge(n) {
+        const newAge =  n + 10;
+        this.age = newAge;
     }
 }
+// pre set 
+// console.log(person);
 
-console.log(person.fullName);
+// post set
+person.fullName = "Giovanni Gardull";
+// console.log(person)
+
+// age set
+person.changeAge = 8;
+console.log(person.fullProfile);
+
 
 // getters access information
 // setters mutate information
