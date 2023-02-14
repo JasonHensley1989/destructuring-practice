@@ -108,7 +108,10 @@ console.log(a, b, c);
 const person = {
     firstName: "Jason",
     lastName: "Hensley",
-    age: 33
+    age: 33,
+    fullName() {
+        return ` ${person.firstName} ${person.lastName} ${person.age} `
+    }
 }
 
-console.log(person);
+console.log(person.fullName())
