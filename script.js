@@ -102,3 +102,13 @@ const player = {
 const { name, age, weight, birthYear: year, hobbies, hobbies: [a, b, c]} = player;
 
 console.log(a, b, c);
+
+// getters and setters inside of constructor functions
+
+const person = {
+    firstName: "Jason",
+    lastName: "Hensley",
+    age: 33
+}
+
+console.log(person);
