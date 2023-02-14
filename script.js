@@ -109,9 +109,18 @@ const person = {
     firstName: "Jason",
     lastName: "Hensley",
     age: 33,
-    fullName() {
+    get fullName() {
         return ` ${person.firstName} ${person.lastName} ${person.age} `
+    },
+    set fullName(value) {
+        const parts = value.split(" ");
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+        
     }
 }
 
-console.log(person.fullName())
+console.log(person.fullName);
+
+// getters access information
+// setters mutate information
