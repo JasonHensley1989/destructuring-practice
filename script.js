@@ -135,8 +135,16 @@ person.fullName = "Giovanni Gardull";
 
 // age set
 person.changeAge = 8;
-console.log(person.fullProfile);
+
 
 
 // getters access information
 // setters mutate information
+let arr = [];
+const counter2 = (n) => {
+    for(let i = n; i < 11; i++) {
+        arr.unshift(i);
+        console.log(arr)
+    }
+}
+counter2(5);
